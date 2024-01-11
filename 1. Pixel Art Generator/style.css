@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&family=Pixelify+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsalmon;
+}
+
+.container {
+    width: 700px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.sliders-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.slider label {
+    font-size: 1.3rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    margin-right: 20px;
+}
+
+.input-container span {
+    width: 30px;
+    font-size: 1.5rem;
+}
+
+.options-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.options-content button {
+    width: 100px;
+    height: 40px;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    border-radius: 8px;
+    background-color: lightgreen;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.options-content button:hover {
+    background-color: #fff;
+}
+
+.options-content button:active {
+    transform: scale(0.95);
+}
+
+.options-content .color-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawing-grid {
+    margin: 40px 20px;
+}
+
+.drawing-grid table {
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Change 'red' to the color you want */
+    border-collapse: collapse;
+}
+
+.drawing-grid .cell {
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    min-height: 10px;
+    border: rgba(0, 0, 0, 0.1) 1px solid;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#download-btn {
+    width: 50%;
+    height: 40px;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    border-radius: 8px;
+    background-color: lightgreen;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 15px;
+}
+
+#download-btn:hover {
+    background-color: #fff;
+}
+
+#download-btn:active {
+    transform: scale(0.95);
+}
+
+/* This is for the track */
+input[type='range']::-webkit-slider-runnable-track {
+    background: lightgrey;
+}
+
+input[type='range']::-moz-range-track {
+    background: lightgrey;
+}
+
+/* This is for the thumb */
+input[type='range']::-webkit-slider-thumb {
+    background: rgb(34, 34, 34);
+}
+
+input[type='range']::-moz-range-thumb {
+    background: rgb(34, 34, 34);
+}
+
+input[type='color'] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
