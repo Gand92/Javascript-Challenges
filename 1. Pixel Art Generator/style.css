@@ -44,10 +44,11 @@ body {
 .slider {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 
 .slider label {
+    margin-right: 40px;
     font-size: 1.3rem;
 }
 
@@ -123,7 +124,7 @@ body {
 }
 
 #download-btn {
-    width: 50%;
+    width: 280px;
     height: 40px;
     border: rgba(0, 0, 0, 0.2) 1px solid;
     border-radius: 8px;
@@ -168,4 +169,61 @@ input[type='color'] {
     border: none;
     border-radius: 16px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .sliders-content {
+        margin-top: -25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options-content {
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    .options-content button {
+        width: 60px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 0.7rem;
+    }
+
+    .drawing-grid .cell {
+        width: 8px;
+        min-width: 8px;
+        height: 8px;
+        min-height: 8px;
+    }
+
+    #download-btn {
+        margin-top: 0px;
+        font-size: 0.8rem;
+        height: 30px;
+        border-radius: 6px;
+    }
+
+    .color-picker label {
+        display: none;
+    }
+
+    input[type='color'] {
+        width: 30px;
+        height: 100%;
+        border: none;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-size: 2rem;
+        text-align: center;
+    }
 }
