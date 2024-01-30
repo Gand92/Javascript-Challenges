@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Pixel Art Generator | Alessandro Rotili</title>
-        <meta name="description" content="Drawing tool for pixel art" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="title">
-                <h1>Pixel Art Generator</h1>
-            </div>
-            <div class="sliders-content">
-                <div class="slider">
-                    <label for="width-slider">Width</label>
-                    <div class="input-container">
-                        <input
-                            type="range"
-                            min="1"
-                            max="36"
-                            value="10"
-                            class="slider"
-                            id="width-slider"
-                        />
-                        <span id="width-value">10</span>
-                    </div>
-                </div>
-                <div class="slider">
-                    <label for="height-slider">Height</label>
-                    <div class="input-container">
-                        <input
-                            type="range"
-                            min="1"
-                            max="36"
-                            value="10"
-                            class="slider"
-                            id="height-slider"
-                        />
-                        <span id="height-value">10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="options-content">
-                <button id="create-grid-btn">Create <br />Grid</button>
-                <button id="clear-grid-btn">Clear<br />Grid</button>
-                <div class="color-picker">
-                    <label for="color">Choose a color:</label>
-                    <input type="color" id="color" name="color" />
-                </div>
-                <button id="erase-btn">Erase</button>
-                <button id="paint-btn">Paint</button>
-            </div>
-            <div class="drawing-grid">
-                <table></table>
-            </div>
-            <button id="download-btn">Download</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pixel Art Generator | Alessandro Rotili</title>
+    <meta name="description" content="Drawing tool for pixel art" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Pixel Art Generator</h1>
+      </div>
+      <div class="sliders-content">
+        <div class="slider">
+          <label for="width-slider">Width</label>
+          <div class="input-container">
+            <input
+              type="range"
+              min="1"
+              max="36"
+              value="10"
+              class="slider"
+              id="width-slider"
+            />
+            <span id="width-value">10</span>
+          </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-        <script src="main.js"></script>
-    </body>
+        <div class="slider">
+          <label for="height-slider">Height</label>
+          <div class="input-container">
+            <input
+              type="range"
+              min="1"
+              max="36"
+              value="10"
+              class="slider"
+              id="height-slider"
+            />
+            <span id="height-value">10</span>
+          </div>
+        </div>
+      </div>
+      <div class="options-content">
+        <button id="create-grid-btn">Create <br />Grid</button>
+        <button id="clear-grid-btn">Clear<br />Grid</button>
+        <div class="color-picker">
+          <label for="color">Choose a color:</label>
+          <input type="color" id="color" name="color" />
+        </div>
+        <button id="erase-btn">Erase</button>
+        <button id="paint-btn">Paint</button>
+      </div>
+      <div class="drawing-grid">
+        <table></table>
+      </div>
+      <button id="download-btn">Download</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
